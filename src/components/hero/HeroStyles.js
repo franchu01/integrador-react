@@ -36,9 +36,8 @@ export const CardStyled = styled( Card )`
     justify-content: center;
     align-items: initial;
     flex-direction: column;
-    height: 21rem;
-    width: 14rem;
-    
+    //height: 21rem;
+    //width: 14rem;
 `
 
 export const VerTodoButtonStyled = styled.button`
@@ -63,4 +62,25 @@ export const HeroHeaderContainerStyled = styled.div`
     justify-content: center;
     align-items: center;
     gap: 40px;
+`
+
+export const CategoriesContainerStyled = styled.div`
+
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    
+`
+
+export const CategoryStyled = styled.div`
+
+    height: 50px;
+    width: 50px;
+    border-radius: 40%;
+    border: 1px dotted #ba181b;
+    background: url(${ (props) => props.imgUrl });
+    :hover {
+        transform: scale(1.1);
+    }
+
 `
