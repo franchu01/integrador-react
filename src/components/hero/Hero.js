@@ -3,8 +3,14 @@ import { CardContainerStyled, CardStyled, CategoriesContainerStyled, CategorySty
 import { products } from '../../data/Products'
 import { categories } from '../../data/Categories'
 import { LinkStyled } from '../link/linkStyles'
+import { useDispatch } from 'react-redux'
+import { ADD_TO_CART } from '../../types'
+import { addToCart } from '../../actions/cartActions'
 
 const Hero = () => {
+
+  const dispatch = useDispatch()
+
   return (
     <HeroContainerStyled>
 
@@ -32,7 +38,7 @@ const Hero = () => {
             <p>{product.desc}</p>
             <p>${product.price}</p>
             </LinkStyled>
-            <button>Add</button>
+            <button onClick={ () => dispatch(addToCart(product.id)) } >Add</button>
           </CardStyled>
         } )}
       </CardContainerStyled>
