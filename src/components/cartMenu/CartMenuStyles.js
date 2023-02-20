@@ -18,10 +18,6 @@ export const CartDataContainerStyled = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    p{
-        font-size: 26px;
-        font-weight: bold;
-    }
     
 `
 export const CustomBarStyled = styled.div`
@@ -33,22 +29,52 @@ export const CustomBarStyled = styled.div`
 export const ItemInCartCardStyled = styled.div`
 
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     border: 1px solid black;
     border-radius: 10px;
     padding: 5px;
-    width: auto;
-    height: 370px;
-
+    width: 70%;
 
 `
 export const ItemsContainerStyled = styled.div`
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 80%;
+    gap: 10px;
     height: auto;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    
 `
 
+export const PlusStyled = styled.button`
+    border: none;
+    
+`
+
+export const MinusStyled = styled.button`
+    border: none;
+    
+`
+
+export const QuantityStyled = styled.p`
+
+    
+    
+`
+
+export const QuantityHandlerStyled = styled.div`
+
+    display: flex;
+    border: 1px solid black;
+    height: 30px;
+    align-items:center;
+
+`
+export const EliminateBtnStyled = styled.button`
+
+    border: none;
+    color: red;
+
+`
