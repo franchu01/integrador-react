@@ -1,5 +1,5 @@
 import React from 'react'
-import { BigMenu, ButtonsContainerStyled, LinkButtonStyled, MenuToggleStyled, NavbarStyled } from './NavbarStyles'
+import { BigMenu, ButtonsContainerStyled, DivStyled, LinkButtonStyled, MenuToggleStyled, NavbarStyled } from './NavbarStyles'
 import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 import { useState } from 'react';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
@@ -9,36 +9,33 @@ import BurgerMenu from '../burgerMenu/BurgerMenu';
 import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
 
-  const [openMenu, setOpenMenu] = useState(false);
-  const toggleMenu = () => {
-    setOpenMenu(!openMenu)
+  const navigate = useNavigate()
+  const [isOpen, setIsOpen] = useState(false)
+  const productsMenuHandler = () => {
+    setIsOpen(!isOpen)
+    if(isOpen) {
+      return <DivStyled></DivStyled>
+    } else {
+      return null
+    }
   }
 
-  const navigate = useNavigate()
 
   return (
     <>
     <NavbarStyled>
-        <>.</>
-        <BigMenu active={openMenu} ></BigMenu>
         <h1>VIRTUOUS</h1>
+
         <ButtonsContainerStyled>
-            {
-              openMenu && (
-                <MenuToggleStyled active={openMenu} >
-                  <span onClick={ () => {navigate("/"); toggleMenu() } } >Home</span>
-                  <span onClick={ () => {navigate("cart"); toggleMenu() } } >Cart</span>
-                  <span>Check Out</span>
-                  <span>About</span>
-                  <span>Blog</span>
-                </MenuToggleStyled>
-              )
-            }
-            
-            <LinkButtonStyled onClick={toggleMenu}  >
-              <BurgerMenu active={openMenu} />
-            </LinkButtonStyled>
-            
+          <DivStyled></DivStyled>
+                <MenuToggleStyled >
+                  <span onClick={ () => {navigate("/")} } >Inicio</span>
+                  <span onClick={ () => {navigate("cart") } } >Carrito</span>
+                  <span onMouseOver={ () => productsMenuHandler() } >Productos</span>
+                  <span>Contacto</span>
+                  <span>Mis Compras</span>
+                </MenuToggleStyled>  
+            <DivStyled></DivStyled>
         </ButtonsContainerStyled>
     </NavbarStyled>
     </>

@@ -20,6 +20,14 @@ export const CartDataContainerStyled = styled.div`
     gap: 20px;
     
 `
+
+export const CartTitleStyled = styled.p`
+
+    font-weight: bold;
+    font-size: 20px;
+
+`
+
 export const CustomBarStyled = styled.div`
     background-color: black;
     height: 1px;
@@ -35,6 +43,7 @@ export const ItemInCartCardStyled = styled.div`
     border-radius: 10px;
     padding: 5px;
     width: 70%;
+    margin-top: 20px;
 
 `
 export const ItemsContainerStyled = styled.div`
@@ -76,5 +85,33 @@ export const EliminateBtnStyled = styled.button`
 
     border: none;
     color: red;
+
+`
+export const FinalizarCompraStyled = styled.button`
+
+    border: none;
+    border-radius: 8px;
+    padding: 7px 15px;
+    color: white;
+    background-color: #3483fa;
+    font-size: 15px;
+    cursor: pointer;
+
+`
+
+export const DisplayFlexDiv = styled.div `
+
+    display: flex;
+    gap: 10px;
+    p{
+        font-size: 16px;
+        font-weight: bold;
+    }
+`
+
+export const EmptyCartStyled = styled.div`
+
+    display: block;
+    margin: 20px;
 
 `

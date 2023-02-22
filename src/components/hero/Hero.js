@@ -13,18 +13,7 @@ const Hero = () => {
 
   return (
     <HeroContainerStyled>
-
-      <HeroHeaderContainerStyled>
-        <h1> Categorias </h1>
-      </HeroHeaderContainerStyled>
-
-      <CategoriesContainerStyled>
-        {categories.map((category) => {
-          return <CategoryStyled key={category.id}  imgUrl={category.img} />
-        } )}
-      </CategoriesContainerStyled>
       
-
       <HeroHeaderContainerStyled>
         <h1> Nuestros Productos ... </h1>
       </HeroHeaderContainerStyled>
