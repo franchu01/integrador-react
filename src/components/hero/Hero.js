@@ -1,10 +1,8 @@
 import React from 'react'
-import { CardContainerStyled, CardStyled, CategoriesContainerStyled, CategoryStyled, HeroContainerStyled, HeroHeaderContainerStyled, InputSearchStyled, VerTodoButtonStyled } from './HeroStyles'
+import { CardContainerStyled, CardStyled, HeroContainerStyled, HeroHeaderContainerStyled } from './HeroStyles'
 import { products } from '../../data/Products'
-import { categories } from '../../data/Categories'
 import { LinkStyled } from '../link/linkStyles'
 import { useDispatch } from 'react-redux'
-import { ADD_TO_CART } from '../../types'
 import { addToCart } from '../../actions/cartActions'
 
 const Hero = () => {
@@ -31,9 +29,6 @@ const Hero = () => {
           </CardStyled>
         } )}
       </CardContainerStyled>
-
-      <VerTodoButtonStyled>VER TODOS LOS PRODUCTOS</VerTodoButtonStyled>
-
     </HeroContainerStyled>
   )
 }

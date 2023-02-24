@@ -2,25 +2,32 @@ import styled from "styled-components";
 
 export const NavbarStyled = styled.div`
 
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200&display=swap');
+
     width: 100%;
     height: 230px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
+    
     background-color: #0b090a;
 
     span {
         cursor: pointer;
         width: fit-content;
     }
+    
 
-    h1 {
-        font-size: 65px;
-        color: #ba181b;
-        font-family: "Permanent+Marker", sans-serif;
-    }
+`
+
+export const TitleStyled = styled.h1`
+
+    font-size: 65px;
+    color: #ba181b;
+    font-family: 'Cinzel', serif;
+
+    transform: ${ props => props.fix ? `scale(1.5)` :   `scale(1)` };
 
 `
 
@@ -51,7 +58,7 @@ export const ButtonsContainerStyled = styled.div`
 export const MenuToggleStyled = styled.div`
 
     display: flex;
-    position: initial;
+    position: relative;
     align-items: center;
     margin: 0;
     color: #ba181b;
@@ -74,3 +81,25 @@ export const DivStyled = styled.div`
     background-color: #ba181b;
 `
 
+export const HoverMenuStyled = styled.div`
+    position: absolute;
+    background-color: #0b090a;
+    color:  #ba181b;
+    border: 1px solid #ba181b;
+    border-radius: 6px;
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+
+    top: 30px;
+    left: 180px;
+
+    p {
+        :hover {
+            color: white;
+        }
+        cursor: pointer;
+    }
+
+`

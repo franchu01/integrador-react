@@ -11,7 +11,6 @@ export const LayoutStyled = styled.div`
 
 export const PageContainerStyled = styled.div`
 
-    height: calc( 100vh - 50px );
     background-color: #0b090a;
 
 `

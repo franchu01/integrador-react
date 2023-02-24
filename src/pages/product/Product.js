@@ -7,7 +7,6 @@ import { useParams } from 'react-router-dom'
 const Product = () => {
 
     const { id } = useParams()
-    console.log(products[id])
     
   return (
     <ProductSectionStyled>

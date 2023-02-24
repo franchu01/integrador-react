@@ -5,6 +5,7 @@ import Home from '../pages/Home'
 import Error404 from '../pages/error/Error404'
 import Cart from '../pages/cart/Cart'
 import Product from '../pages/product/Product'
+import Category from '../pages/category/Category'
 
 
 
@@ -18,6 +19,7 @@ const Routes = () => {
             <Route path='/' element={ <Home/> }  />
             <Route path='cart' element={ <Cart/> }  />
             <Route path='product/:id' element={ <Product/> } />
+            <Route path='category/:category' element={ <Category/>  } />
             <Route path='*' element={ <Error404/> }  />
 
         </ReactDomRoutes>

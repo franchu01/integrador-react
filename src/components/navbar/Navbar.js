@@ -1,37 +1,36 @@
-import React from 'react'
-import { BigMenu, ButtonsContainerStyled, DivStyled, LinkButtonStyled, MenuToggleStyled, NavbarStyled } from './NavbarStyles'
-import DensityMediumIcon from '@mui/icons-material/DensityMedium';
+
+import { ButtonsContainerStyled, DivStyled, HoverMenuStyled, MenuToggleStyled, NavbarStyled, TitleStyled } from './NavbarStyles'
 import { useState } from 'react';
-import AccountBoxIcon from '@mui/icons-material/AccountBox';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import AddLocationIcon from '@mui/icons-material/AddLocation';
-import BurgerMenu from '../burgerMenu/BurgerMenu';
+
 import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
 
   const navigate = useNavigate()
-  const [isOpen, setIsOpen] = useState(false)
-  const productsMenuHandler = () => {
-    setIsOpen(!isOpen)
-    if(isOpen) {
-      return <DivStyled></DivStyled>
-    } else {
-      return null
-    }
-  }
-
+  const [open, setOpen] = useState(false)
 
   return (
     <>
     <NavbarStyled>
-        <h1>VIRTUOUS</h1>
+      
+        <TitleStyled >VIRTUOUS</TitleStyled>
 
         <ButtonsContainerStyled>
           <DivStyled></DivStyled>
                 <MenuToggleStyled >
                   <span onClick={ () => {navigate("/")} } >Inicio</span>
                   <span onClick={ () => {navigate("cart") } } >Carrito</span>
-                  <span onMouseOver={ () => productsMenuHandler() } >Productos</span>
+                  <span onMouseOver={ () => setOpen(true) }  onMouseLeave={ () => setOpen(false) } >Productos</span>
+                  {
+                    open &&
+                    <HoverMenuStyled onMouseOver={ () => setOpen(true) }  onMouseLeave={ () => setOpen(false) }  > 
+                    <p onClick={ () => {navigate("category/bermuda") } } >Bermudas</p>
+                    <p onClick={ () => {navigate("category/buzo") } } >Buzos</p>
+                    <p onClick={ () => {navigate("category/remera") } } >Remeras</p>
+                    <p onClick={ () => {navigate("category/sweater") } } >Sweaters</p>
+                  </HoverMenuStyled>
+                  }
+                  
+                  
                   <span>Contacto</span>
                   <span>Mis Compras</span>
                 </MenuToggleStyled>  

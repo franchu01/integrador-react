@@ -25,7 +25,6 @@ export const CardContainerStyled = styled.div`
     align-items: center;
     gap: 15px;
     width: 60%;
-    height: 100%;
     margin: 20px;
     flex-wrap: wrap;
 
@@ -78,9 +77,6 @@ export const CategoryStyled = styled.div`
     width: 50px;
     border-radius: 40%;
     border: 1px dotted #ba181b;
-    background: url(${ (props) => props.imgUrl });
-    :hover {
-        transform: scale(1.1);
-    }
+    
 
 `

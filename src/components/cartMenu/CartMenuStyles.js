@@ -18,7 +18,7 @@ export const CartDataContainerStyled = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    
+    padding-bottom: 30px;
 `
 
 export const CartTitleStyled = styled.p`
@@ -59,12 +59,12 @@ export const ItemsContainerStyled = styled.div`
 
 export const PlusStyled = styled.button`
     border: none;
-    
+    cursor: pointer;
 `
 
 export const MinusStyled = styled.button`
     border: none;
-    
+    cursor: pointer;
 `
 
 export const QuantityStyled = styled.p`
@@ -85,6 +85,7 @@ export const EliminateBtnStyled = styled.button`
 
     border: none;
     color: red;
+    cursor: pointer;
 
 `
 export const FinalizarCompraStyled = styled.button`
