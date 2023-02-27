@@ -6,7 +6,7 @@ export const products = [
         price: 12000,
         category: "Buzo",
         desc: "El que no falla", // s
-        img: "./img/blackbuzo.jpg",
+        img: "/img/blackbuzo.jpg",
     },
     {
         id: 2,
@@ -14,7 +14,7 @@ export const products = [
         price: 12000,
         category: "Remera",
         desc: "El que no falla", // s
-        img: "./img/blackshirt.jpg",
+        img: "/img/blackshirt.jpg",
     },
     {
         id: 3,
@@ -22,7 +22,7 @@ export const products = [
         price: 20000,
         category: "Bermuda",
         desc: "El que no falla", // s
-        img: "./img/bermudablack.jpg",
+        img: "/img/bermudablack.jpg",
 
     },
     {
@@ -31,7 +31,7 @@ export const products = [
         price: 32000,
         category: "Buzo",
         desc: "Blanco como la nieve", // s
-        img: "./img/buzowhite.jpg",
+        img: "/img/buzowhite.jpg",
     },
     {
         id: 5,
@@ -39,7 +39,7 @@ export const products = [
         price: 12000,
         category: "Remera",
         desc: "Blanco como la nieve", // s
-        img: "./img/whiteremera.jpg",
+        img: "/img/whiteremera.jpg",
     },
     {
         id: 6,
@@ -47,7 +47,7 @@ export const products = [
         price: 20000,
         category: "Bermuda",
         desc: "Blanco como la nieve", // s
-        img: "./img/whitejean.jpg",
+        img: "/img/whitejean.jpg",
     },
     {
         id: 7,
@@ -55,7 +55,7 @@ export const products = [
         price: 52000,
         category: "Buzo",
         desc: "Llamativo, como te gusta", // s
-        img: "./img/buzored.jpg",
+        img: "/img/buzored.jpg",
     },
     {
         id: 8,
@@ -63,7 +63,7 @@ export const products = [
         price: 32000,
         category: "Remera",
         desc: "Llamativo, como te gusta", // s
-        img: "./img/remerared.jpg",
+        img: "/img/remerared.jpg",
     },
     {
         id: 9,
@@ -71,7 +71,7 @@ export const products = [
         price: 2000,
         category: "Bermuda",
         desc: "Llamativo, como te gusta", // X
-        img: "./img/redshort.jpg",
+        img: "/img/redshort.jpg",
     },
     {
         id: 10,
@@ -79,7 +79,7 @@ export const products = [
         price: 62000,
         category: "Buzo",
         desc: "Un buzo tranquilo y amable", // s
-        img: "./img/hombre-joven-expresivo-posando-estudio.jpg",
+        img: "/img/hombre-joven-expresivo-posando-estudio.jpg",
     },
     {
         id: 11,
@@ -87,7 +87,7 @@ export const products = [
         price: 52000,
         category: "Remera",
         desc: "Seran recordados para toda la historia", // s
-        img: "./img/legendary remera.jpg",
+        img: "/img/legendary remera.jpg",
     },
     {
         id: 12,
@@ -95,7 +95,7 @@ export const products = [
         price: 7000,
         category: "Bermuda", 
         desc: "Como el blanco anterior, pero roto", // s
-        img: "./img/betajean.jpg",
+        img: "/img/betajean.jpg",
     },
     {
         id: 13,
@@ -103,7 +103,7 @@ export const products = [
         price: 33000,
         category: "Buzo",
         desc: "Tenebroso esqueleto con mucha facha", // s
-        img: "./img/buzomuerteamarrilla.jpg",
+        img: "/img/buzomuerteamarrilla.jpg",
     },
     {
         id: 14,
@@ -111,7 +111,7 @@ export const products = [
         price: 22000,
         category: "Remera",
         desc: "Amarillo como patitos", //  s
-        img: "./img/yellowremera.jpg",
+        img: "/img/yellowremera.jpg",
     },
     {
         id: 15,
@@ -119,7 +119,7 @@ export const products = [
         price: 24000,
         category: "Bermuda",
         desc: "Colores como para no aburrirse",  // s
-        img: "./img/grenblueshort.jpg",
+        img: "/img/grenblueshort.jpg",
     },
     {
         id: 16,
@@ -127,7 +127,7 @@ export const products = [
         price: 72000,
         category: "Buzo",
         desc: "Para los solitarios", // s
-        img: "./img/lobohoodie.jpg",
+        img: "/img/lobohoodie.jpg",
     },
     {
         id: 17,
@@ -135,7 +135,7 @@ export const products = [
         price: 88000,
         category: "Remera",
         desc: "Un grado de marron muy facha", // s
-        img: "./img/marroncitobuzo.jpg",
+        img: "/img/marroncitobuzo.jpg",
     },
     {
         id: 18,
@@ -143,7 +143,7 @@ export const products = [
         price: 6000,
         category: "Bermuda",
         desc: "Perfecto para tirar facha", // s
-        img: "./img/tricolorshort.jpg",
+        img: "/img/tricolorshort.jpg",
     },
     {
         id: 19,
@@ -151,7 +151,7 @@ export const products = [
         price: 21000,
         category: "Buzo",
         desc: "Para los reyes de la jungla", //  s
-        img: "./img/leonhoodie.jpg",
+        img: "/img/leonhoodie.jpg",
     },
     {
         id: 20,
@@ -159,7 +159,7 @@ export const products = [
         price: 22000,
         category: "Remera",
         desc: "Verde llamativo, es clave", // s
-        img: "./img/greenshirt.jpg",
+        img: "/img/greenshirt.jpg",
     },
     {
         id: 21,
@@ -167,7 +167,7 @@ export const products = [
         price: 24000,
         category: "Sweater",
         desc: "Como los tejia tu abu", // s
-        img: "./img/gannysweater.jpg",
+        img: "/img/gannysweater.jpg",
     },
     {
         id: 22,
@@ -175,7 +175,7 @@ export const products = [
         price: 11000,
         category: "Sweater",
         desc: "Para estar siempre azulado <3", // s
-        img: "./img/verdeazuladosweater.jpg",
+        img: "/img/verdeazuladosweater.jpg",
         
     },
     {
@@ -184,7 +184,7 @@ export const products = [
         price: 9000,
         category: "Sweater",
         desc: "All black, nunca falla", // s
-        img: "./img/blacksweater.jpg",
+        img: "/img/blacksweater.jpg",
     },
     {
         id: 24,
@@ -192,7 +192,7 @@ export const products = [
         price: 9000,
         category: "Sweater",
         desc: "All white, nunca falla", // s
-        img: "./img/whitesweater.jpg",
+        img: "/img/whitesweater.jpg",
     },
     {
         id: 25,
@@ -200,7 +200,7 @@ export const products = [
         price: 9000,
         category: "Sweater",
         desc: "Para la gente llamativa", // s
-        img: "./img/redsweater.jpg",
+        img: "/img/redsweater.jpg",
     },
 
 ]

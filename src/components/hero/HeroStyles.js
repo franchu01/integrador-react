@@ -37,6 +37,11 @@ export const CardStyled = styled( Card )`
     flex-direction: column;
     //height: 21rem;
     //width: 14rem;
+    img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
 `
 
 export const VerTodoButtonStyled = styled.button`
