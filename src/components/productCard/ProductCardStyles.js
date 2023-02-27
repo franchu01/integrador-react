@@ -15,15 +15,17 @@ export const BigContainerStyled = styled.div`
 export const CardContainerStyled = styled.div`
 
     display: flex;
-    width: 55%;
+    width: 40%;
     height: 50%;
     background-color: #edf2f4;
     border-radius: 16px;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 80px;
     flex-direction: row;
     padding: 35px 20px;
+    box-shadow: -2px 0px 13px 2px rgba(0,0,0,0.48);
 
 `
 

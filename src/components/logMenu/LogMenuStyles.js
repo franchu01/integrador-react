@@ -34,10 +34,23 @@ export const LogContainer = styled.div`
 
 export const ExitContainer = styled.div`
     display: flex;
-    position: fixed;
-    top: 5px;
-    right: 5px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
     cursor: pointer;
+    font-weight: bold;
+    color: #ba181b;
+
+    :hover {
+        transform: scale(1.2);
+    }
+
+`
+
+export const RelativeContainer = styled.div`
+    display: flex;
+    position: relative;
+    flex-direction: column;
 
 `
 

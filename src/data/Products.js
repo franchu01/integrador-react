@@ -5,175 +5,202 @@ export const products = [
         name: "Buzo black oversize",
         price: 12000,
         category: "Buzo",
-        desc: "El que no falla",
+        desc: "El que no falla", // s
+        img: "./img/blackbuzo.jpg",
     },
     {
         id: 2,
         name: "Remera black oversize",
         price: 12000,
         category: "Remera",
-        desc: "El que no falla",
+        desc: "El que no falla", // s
+        img: "./img/blackshirt.jpg",
     },
     {
         id: 3,
         name: "Bermuda black",
         price: 20000,
         category: "Bermuda",
-        desc: "El que no falla",
+        desc: "El que no falla", // s
+        img: "./img/bermudablack.jpg",
+
     },
     {
         id: 4,
         name: "All white oversize",
         price: 32000,
         category: "Buzo",
-        desc: "Blanco como la nieve",
+        desc: "Blanco como la nieve", // s
+        img: "./img/buzowhite.jpg",
     },
     {
         id: 5,
         name: "Remera white oversize",
         price: 12000,
         category: "Remera",
-        desc: "Blanco como la nieve",
+        desc: "Blanco como la nieve", // s
+        img: "./img/whiteremera.jpg",
     },
     {
         id: 6,
         name: "Bermuda white",
         price: 20000,
         category: "Bermuda",
-        desc: "Blanco como la nieve",
+        desc: "Blanco como la nieve", // s
+        img: "./img/whitejean.jpg",
     },
     {
         id: 7,
         name: "Buzo red oversize",
         price: 52000,
         category: "Buzo",
-        desc: "Llamativo, como te gusta",
+        desc: "Llamativo, como te gusta", // s
+        img: "./img/buzored.jpg",
     },
     {
         id: 8,
         name: "Remera red oversize",
         price: 32000,
         category: "Remera",
-        desc: "Llamativo, como te gusta",
+        desc: "Llamativo, como te gusta", // s
+        img: "./img/remerared.jpg",
     },
     {
         id: 9,
         name: "Bermuda red",
         price: 2000,
         category: "Bermuda",
-        desc: "Llamativo, como te gusta",
+        desc: "Llamativo, como te gusta", // X
+        img: "./img/redshort.jpg",
     },
     {
         id: 10,
-        name: "Omega",
+        name: "Buzo de jean",
         price: 62000,
         category: "Buzo",
-        desc: "Un buzo tranquilo y amable",
+        desc: "Un buzo tranquilo y amable", // s
+        img: "./img/hombre-joven-expresivo-posando-estudio.jpg",
     },
     {
         id: 11,
-        name: "Alfa T-Shirty",
+        name: "Legendary",
         price: 52000,
         category: "Remera",
-        desc: "Una remera digna para un lider",
+        desc: "Seran recordados para toda la historia", // s
+        img: "./img/legendary remera.jpg",
     },
     {
         id: 12,
-        name: "Beta Short",
+        name: "Bermuda blanca rota",
         price: 7000,
-        category: "Bermuda",
-        desc: "Segui a el ganado bro",
+        category: "Bermuda", 
+        desc: "Como el blanco anterior, pero roto", // s
+        img: "./img/betajean.jpg",
     },
     {
         id: 13,
-        name: "Cool Blue hoodie",
+        name: "Buzo muerte amarrilla",
         price: 33000,
         category: "Buzo",
-        desc: "Con este sos cool y blue",
+        desc: "Tenebroso esqueleto con mucha facha", // s
+        img: "./img/buzomuerteamarrilla.jpg",
     },
     {
         id: 14,
-        name: "Cool Blue",
+        name: "Amarillo luz",
         price: 22000,
         category: "Remera",
-        desc: "Con este sos cool y blue",
+        desc: "Amarillo como patitos", //  s
+        img: "./img/yellowremera.jpg",
     },
     {
         id: 15,
-        name: "Blue Cool Shorty",
+        name: "Negro con franjas",
         price: 24000,
         category: "Bermuda",
-        desc: "Con este sos cool y blue",
+        desc: "Colores como para no aburrirse",  // s
+        img: "./img/grenblueshort.jpg",
     },
     {
         id: 16,
-        name: "Blue steel hoodie",
+        name: "El lobo hoodie",
         price: 72000,
         category: "Buzo",
-        desc: "A el mejor estilo zoolander",
+        desc: "Para los solitarios", // s
+        img: "./img/lobohoodie.jpg",
     },
     {
         id: 17,
-        name: "La Magnum",
+        name: "Buzo marroncito",
         price: 88000,
         category: "Remera",
-        desc: "A el mejor estilo zoolander",
+        desc: "Un grado de marron muy facha", // s
+        img: "./img/marroncitobuzo.jpg",
     },
     {
         id: 18,
-        name: "Starter short",
+        name: "El tricolor",
         price: 6000,
         category: "Bermuda",
-        desc: "Para arrancar",
+        desc: "Perfecto para tirar facha", // s
+        img: "./img/tricolorshort.jpg",
     },
     {
         id: 19,
-        name: "Carnavalintro hoodie",
+        name: "El leon hoodie",
         price: 21000,
         category: "Buzo",
-        desc: "Para los fanes de chano",
+        desc: "Para los reyes de la jungla", //  s
+        img: "./img/leonhoodie.jpg",
     },
     {
         id: 20,
-        name: "Casaca Tan Bionica",
+        name: "Remera verde",
         price: 22000,
         category: "Remera",
-        desc: "Para los fanes de chano",
+        desc: "Verde llamativo, es clave", // s
+        img: "./img/greenshirt.jpg",
     },
     {
         id: 21,
         name: "Abuelita",
         price: 24000,
         category: "Sweater",
-        desc: "Como los tejia tu abu",
+        desc: "Como los tejia tu abu", // s
+        img: "./img/gannysweater.jpg",
     },
     {
         id: 22,
-        name: "Tricolor",
+        name: "Verde azulado",
         price: 11000,
         category: "Sweater",
-        desc: "Para los de Almagro",
+        desc: "Para estar siempre azulado <3", // s
+        img: "./img/verdeazuladosweater.jpg",
+        
     },
     {
         id: 23,
         name: "All black sweter",
         price: 9000,
         category: "Sweater",
-        desc: "All black, nunca falla",
+        desc: "All black, nunca falla", // s
+        img: "./img/blacksweater.jpg",
     },
     {
         id: 24,
         name: "All white sweter",
         price: 9000,
         category: "Sweater",
-        desc: "All white, nunca falla",
+        desc: "All white, nunca falla", // s
+        img: "./img/whitesweater.jpg",
     },
     {
         id: 25,
         name: "Red Sweater",
         price: 9000,
         category: "Sweater",
-        desc: "Para la gente llamativa",
+        desc: "Para la gente llamativa", // s
+        img: "./img/redsweater.jpg",
     },
 
 ]
