@@ -4,6 +4,7 @@ import { products } from '../../data/Products'
 import { LinkStyled } from '../link/linkStyles'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../../actions/cartActions'
+import { Button } from '@mui/material'
 
 const Hero = () => {
 
@@ -18,7 +19,6 @@ const Hero = () => {
 
       <CardContainerStyled>
         {products.map( (product) => {
-          let img = product.img
           return <CardStyled key={product.id} >
             <LinkStyled to={`/product/${product.id - 1}`} >
             <img src={require(`../../data${product.img}`)} alt='imagen' />
@@ -26,7 +26,7 @@ const Hero = () => {
             <p>{product.desc}</p>
             <p>${product.price}</p>
             </LinkStyled>
-            <button onClick={ () => dispatch(addToCart(product.id)) } >Add</button>
+            <Button variant='contained' color='error' onClick={ () => dispatch(addToCart(product.id)) } >Agregar al carrito</Button>
           </CardStyled>
         } )}
       </CardContainerStyled>

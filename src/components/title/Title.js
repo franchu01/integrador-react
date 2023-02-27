@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import { ReturnBtnStyled, TitleContainerStyled, TitleStyled } from './TitleStyles'
+import { TitleContainerStyled, TitleStyled } from './TitleStyles'
+import { Button } from '@mui/material'
 
 const Title = ( {children} ) => {
 
@@ -9,7 +10,7 @@ const Title = ( {children} ) => {
   return (
     <TitleContainerStyled>
         <TitleStyled> {children} </TitleStyled>
-        <ReturnBtnStyled onClick={ () => { navigate("/") } }  >Volver</ReturnBtnStyled>
+        <Button variant='contained' color='error' onClick={ () => { navigate("/") } }  >Volver</Button>
     </TitleContainerStyled>
   )
 }

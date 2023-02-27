@@ -31,8 +31,8 @@ const Navbar = () => {
                   }
                   
                   
-                  <span>Contacto</span>
-                  <span>Mis Compras</span>
+                  <span onClick={ () => alert('En nuestro pie de pagina encontraras toda la informacion que necesites') } >Contacto</span>
+                  <span onClick={ () => {navigate("*")} } >Mis Compras</span>
                 </MenuToggleStyled>  
             <DivStyled></DivStyled>
         </ButtonsContainerStyled>

@@ -13,17 +13,7 @@ export const TitleContainerStyled = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    height: 55vh ;
     background-color: #0b090a;
 
-`
-
-export const ReturnBtnStyled = styled.button`
-
-    border: 1px solid #ba181b;
-    border-radius: 8px;
-    padding: 10px 20px;
-    background-color: white;
-    color: #ba181b;
-    cursor: pointer;
 `

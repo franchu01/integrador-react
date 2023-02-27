@@ -45,6 +45,12 @@ export const ItemInCartCardStyled = styled.div`
     width: 70%;
     margin-top: 20px;
 
+    img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+    }
+
 `
 export const ItemsContainerStyled = styled.div`
     display: flex;

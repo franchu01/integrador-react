@@ -31,7 +31,7 @@ const CartMenu = () => {
 
               {state.cart.map((item) => {
                 return <ItemInCartCardStyled key={item.id} >
-                  <img src='https://via.placeholder.com/50' alt='imagen' />
+                  <img src={require(`../../data${item.img}`)} alt='imagen' />
                   <h4>{ item.name }</h4>
                   <QuantityHandlerStyled>
                     <MinusStyled onClick={ () => {dispatch( removeFromCart(item.id) )  } } >-</MinusStyled>
@@ -44,7 +44,7 @@ const CartMenu = () => {
               } )}
               <DisplayFlexDiv>
                <p>Total: $ {totalPrice}</p>
-               <FinalizarCompraStyled onClick={ () => { dispatch( clearCart() ) } } >Finalizar Compra</FinalizarCompraStyled>
+               <FinalizarCompraStyled onClick={ () => { dispatch( clearCart() ) ; alert('¡Muchas gracias por tu compra!') } } >Finalizar Compra</FinalizarCompraStyled>
               </DisplayFlexDiv>
               </ItemsContainerStyled> : 
 

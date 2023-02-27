@@ -27,6 +27,13 @@ export const CardContainerStyled = styled.div`
     padding: 35px 20px;
     box-shadow: -2px 0px 13px 2px rgba(0,0,0,0.48);
 
+    img { 
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
 `
 
 export const CardInfoContainer = styled.div`

@@ -6,7 +6,7 @@ const CategoryCard = ( item ) => {
   return (
     <Card>
         <InfoContainerStyled>
-            <img src='https://via.placeholder.com/50' />
+            <img src={require(`../../data${item.props.img}`)} alt='imagen' />
             <h3>{item.props.name}</h3>
             <p>${item.props.price}</p>
             <p>Cinco coutas de ${item.props.price / 5}</p>

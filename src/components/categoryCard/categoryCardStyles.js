@@ -18,4 +18,11 @@ export const CategoryCardStyled = styled.div`
 export const InfoContainerStyled = styled.div`
     display: flex;
     flex-direction: column;
+    width: 200px;
+    height: 370px;
+    img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
 `
