@@ -44,8 +44,9 @@ export const AboutSmallContainerStyled = styled.div`
         margin: 0;
     }
 
-    & p:hover{
-        color: white;
+    a{
+        text-decoration: none;
+        color: #ba181b;
     }
 `
 export const AboutSmallContainerStyledd = styled.div`
@@ -61,6 +62,7 @@ export const AboutSmallContainerStyledd = styled.div`
         cursor: pointer;
         
     }
+
    
 `
 
@@ -71,6 +73,10 @@ export const RedesCtn = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 50%;
+    a{
+        text-decoration: none;
+        color: black;
+    }
 `
 
 
