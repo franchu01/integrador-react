@@ -7,14 +7,18 @@ export const AboutContainerStyled = styled.div`
     height: 25%;
     width: 100%;
     background-color: #d9d9d9;
+    @media(max-width: 640px){
+        gap:60px;
+    }
 `
 
 export const SectionContactStyled = styled.div`
     display: flex;
     width: 35%;
-    height: 100%;
+    height: 80%;
     background-color: #d9d9d9;
     align-items: center;
+    margin-right: 60px;
     
 `
 
@@ -26,6 +30,7 @@ export const SectionRedesStyled = styled.div`
     align-items: center;
     width: 25%;
     background-color: #353535;
+    
 
 `
 
@@ -47,6 +52,9 @@ export const AboutSmallContainerStyled = styled.div`
     a{
         text-decoration: none;
         color: #ba181b;
+    }
+    @media(max-width: 640px){
+        width: 60%;
     }
 `
 export const AboutSmallContainerStyledd = styled.div`

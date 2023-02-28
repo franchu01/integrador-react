@@ -6,6 +6,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Routes from './routes/Routes';
 import store from './store';
+import { GlobalStyles } from './styles/GlobalStyles';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
@@ -14,6 +15,7 @@ root.render(
       <Routes/>
     </BrowserRouter>
     </Provider>
+    <GlobalStyles/>
   </>
 );
 

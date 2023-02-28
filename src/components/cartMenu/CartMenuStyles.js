@@ -19,6 +19,11 @@ export const CartDataContainerStyled = styled.div`
     align-items: center;
     gap: 20px;
     padding-bottom: 30px;
+
+    @media(max-width: 640px){
+        width: auto;
+    }
+
 `
 
 export const CartTitleStyled = styled.p`
@@ -49,6 +54,10 @@ export const ItemInCartCardStyled = styled.div`
         width: 80px;
         height: 80px;
         object-fit: cover;
+    }
+
+    @media(max-width: 640px){
+        width: 95%;
     }
 
 `

@@ -15,7 +15,6 @@ const About = () => {
 
   return (
     <AboutContainerStyled>
-
       <SectionContactStyled>
       <AboutSmallContainerStyled>
         <BoldP>SOLO <SpanStyled>VIRTOUS</SpanStyled> </BoldP>

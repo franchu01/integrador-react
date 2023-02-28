@@ -28,6 +28,10 @@ export const CardContainerStyled = styled.div`
     margin: 20px;
     flex-wrap: wrap;
 
+    @media(max-width: 640px){
+        margin: 20px 0px;
+    }
+
 `
 
 export const CardStyled = styled( Card )`
@@ -42,6 +46,16 @@ export const CardStyled = styled( Card )`
         height: 300px;
         object-fit: cover;
     }
+
+    @media(max-width: 640px){
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        height: 380px;
+        width: 200px;
+    }
+
 `
 
 export const VerTodoButtonStyled = styled.button`
@@ -65,7 +79,6 @@ export const HeroHeaderContainerStyled = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
 `
 
 export const CategoriesContainerStyled = styled.div`

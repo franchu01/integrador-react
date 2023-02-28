@@ -17,6 +17,11 @@ export const NavbarStyled = styled.div`
         cursor: pointer;
         width: fit-content;
     }
+
+    @media(max-width: 640px){
+        justify-content: center;
+        height: 260px;
+    }
     
 
 `
@@ -28,6 +33,30 @@ export const TitleStyled = styled.h1`
     font-family: 'Cinzel', serif;
 
     transform: ${ props => props.fix ? `scale(1.5)` :   `scale(1)` };
+
+    @media(max-width: 640px){
+        font-size: 50px;
+    }
+
+
+`
+
+export const ResponsiveProductsMenu = styled.div`
+
+    display: none;
+
+    @media(max-width: 640px){
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 20%;
+        background: #353535;
+        color: black;
+        p{
+            font-weight:bold;
+            padding: 5px;
+        }
+    }
 
 `
 
@@ -71,6 +100,13 @@ export const MenuToggleStyled = styled.div`
         font-size: 25px;
         font-weight: bold;
     }
+    @media(max-width: 640px){
+        flex-direction: column;
+        gap: 0px;
+        span {
+            font-size: 20px;
+        }
+    }
 
 `
 
@@ -79,6 +115,9 @@ export const DivStyled = styled.div`
     width: 700px;
     height: 1px;
     background-color: #ba181b;
+    @media(max-width: 640px){
+        display: none;
+    }
 `
 
 export const HoverMenuStyled = styled.div`
