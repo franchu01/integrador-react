@@ -8,6 +8,7 @@ export const CategoryContainerStyled = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 500px;
     gap: 30px;
     padding: 50px;
 
@@ -18,15 +19,30 @@ export const CategoryContainerStyled = styled.div`
 
     }
 
+    @media (max-width: 640px) {
+        padding: 0px;
+    }
+
+    @media (max-width: 820px) {
+        padding: 0px;
+        height: auto;
+    }
 `
 
 export const ItemsContainerStyled = styled.div`
 
     width: auto;
-    height: auto;
+    height: 100%;
     display: flex;
     padding: 20px;
     gap: 20px;
     flex-wrap: wrap;
+    @media (max-width: 640px) {
+        justify-content: center;
+    }
+    @media (max-width: 820px) {
+        justify-content: center;
+    }
+
 
 `

@@ -4,8 +4,12 @@ export const CartContainerStyled = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 400px;
     background-color: white;
+
+    @media (max-width: 820px) {
+        height: 600px;
+    }
 `
 
 export const CartDataContainerStyled = styled.div`
@@ -22,6 +26,10 @@ export const CartDataContainerStyled = styled.div`
 
     @media(max-width: 640px){
         width: auto;
+    }
+
+    @media (max-width: 820px) {
+        justify-content: center;
     }
 
 `

@@ -52,10 +52,12 @@ export const ResponsiveProductsMenu = styled.div`
         height: 20%;
         background: #353535;
         color: black;
+        margin-bottom: 40px;
         p{
             font-weight:bold;
             padding: 5px;
         }
+        
     }
 
 `
@@ -131,7 +133,7 @@ export const HoverMenuStyled = styled.div`
     display: flex;
     flex-direction: column;
 
-    top: 30px;
+    top: 27px;
     left: 180px;
 
     p {

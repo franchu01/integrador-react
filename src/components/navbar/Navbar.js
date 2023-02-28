@@ -38,10 +38,10 @@ const Navbar = () => {
             <DivStyled></DivStyled>
         </ButtonsContainerStyled>
         <ResponsiveProductsMenu>
-          <p onClick={ () => {navigate("category/bermuda") } } >Bermudas</p>
-          <p onClick={ () => {navigate("category/buzo") } } >Buzos</p>
-          <p onClick={ () => {navigate("category/remera") } } >Remeras</p>
-          <p onClick={ () => {navigate("category/sweater") } } >Sweaters</p>
+          <p onClick={ () => {navigate("category/bermuda") } } >BERMUDAS</p>
+          <p onClick={ () => {navigate("category/buzo") } } >BUZOS</p>
+          <p onClick={ () => {navigate("category/remera") } } >REMERAS</p>
+          <p onClick={ () => {navigate("category/sweater") } } >SWEATERS</p>
         </ResponsiveProductsMenu>
     </NavbarStyled>
     </>

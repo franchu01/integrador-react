@@ -9,6 +9,11 @@ export const BigContainerStyled = styled.div`
     justify-content: center;
     align-items: center;
     background-color: white;
+
+    @media (max-width: 820px) {
+        height: 80vh;
+    }
+
     
 `
 
@@ -33,6 +38,19 @@ export const CardContainerStyled = styled.div`
         object-fit: cover;
         border-radius: 12px;
     }
+    @media (max-width: 640px) {
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+        height: auto;
+    }
+    @media (max-width: 820px) {
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+        height: auto;
+    
+    }
 
 `
 
@@ -50,6 +68,11 @@ export const SeparationDivStyled = styled.div`
     background-color: black;
     width: 1px;
     height: 400px;
-
+    @media (max-width: 640px) {
+        display: none;
+    }
+    @media (max-width: 820px) {
+        display: none;
+    }
 `
 
