@@ -6,6 +6,8 @@ import Error404 from '../pages/error/Error404'
 import Cart from '../pages/cart/Cart'
 import Product from '../pages/product/Product'
 import Category from '../pages/category/Category'
+import About from '../components/about/About'
+import LogBtns from '../components/logBtns/LogBtns'
 
 
 
@@ -23,6 +25,8 @@ const Routes = () => {
             <Route path='*' element={ <Error404/> }  />
 
         </ReactDomRoutes>
+        <LogBtns/>
+        <About/>
     </Layout>
   )
 }

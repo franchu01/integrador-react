@@ -8,9 +8,9 @@ const Layout = ( {children} ) => {
   return (
     <>
         <Navbar />
+        
         <PageContainerStyled>{children}</PageContainerStyled>
-        <LogBtns />
-        <About />
+        
     </>
   )
 }
