@@ -4,9 +4,8 @@ export const CartContainerStyled = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 400px;
     background-color: white;
-
+    margin-bottom: 40px;
     @media (max-width: 820px) {
         height: 600px;
     }
