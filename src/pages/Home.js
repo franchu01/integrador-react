@@ -6,9 +6,10 @@ import ToggleCartButton from '../components/toggleCartButton/ToggleCartButton'
 const Home = () => {
   return (
     <>
+      <LogBtns/>
       <Hero />
       <ToggleCartButton/>
-      <LogBtns/>
+      
     </>
   )
 }
