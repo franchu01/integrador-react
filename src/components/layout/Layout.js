@@ -10,7 +10,10 @@ const Layout = ( {children} ) => {
         <Navbar />
         
         <PageContainerStyled>{children}</PageContainerStyled>
-        
+
+        <LogBtns/>
+        <About />
+
     </>
   )
 }
