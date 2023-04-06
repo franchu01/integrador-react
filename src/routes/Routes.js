@@ -25,8 +25,6 @@ const Routes = () => {
             <Route path='*' element={ <Error404/> }  />
 
         </ReactDomRoutes>
-        <LogBtns/>
-        <About/>
     </Layout>
   )
 }

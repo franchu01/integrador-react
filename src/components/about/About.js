@@ -36,7 +36,7 @@ const About = () => {
         <BoldP>Sumate a nuestra comunidad</BoldP>
 
         <RedesCtn>
-        <p> <a href='' > <TwitterIcon/> </a> </p>
+        <p> <a href='https://www.linkedin.com/in/francisco-cersosimo-5799731b8/' > <TwitterIcon/> </a> </p>
         <p> <a href='https://www.linkedin.com/in/francisco-cersosimo-5799731b8/' >  <LinkedInIcon/></a></p>
         <p> <a href='https://www.instagram.com/francersosimo/' > <InstagramIcon/></a> </p>
         </RedesCtn>
