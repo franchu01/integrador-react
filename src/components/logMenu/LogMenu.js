@@ -1,7 +1,7 @@
 import { Button, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { closeLogIn, openLogIn } from "../../actions/toggleLogActions";
+import { closeLogIn } from "../../actions/toggleLogActions";
 import {
   ExitContainer,
   LogBigContainer,

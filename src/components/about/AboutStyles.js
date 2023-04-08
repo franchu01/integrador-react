@@ -7,7 +7,9 @@ export const AboutContainerStyled = styled.div`
   width: 100%;
   background-color: #d9d9d9;
   @media (max-width: 640px) {
-    gap: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -18,6 +20,14 @@ export const SectionContactStyled = styled.div`
   background-color: #d9d9d9;
   align-items: center;
   margin-right: 60px;
+  @media (max-width: 640px) {
+    width: auto;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 820px) {
+    width: 60%;
+  }
 `;
 
 export const SectionRedesStyled = styled.div`
@@ -27,6 +37,15 @@ export const SectionRedesStyled = styled.div`
   align-items: center;
   width: 25%;
   background-color: #353535;
+  @media (max-width: 640px) {
+    background-color: transparent;
+    p {
+      display: none;
+    }
+    a {
+      font-size: 30px;
+    }
+  }
 `;
 
 export const AboutSmallContainerStyled = styled.div`

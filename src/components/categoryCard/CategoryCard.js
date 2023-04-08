@@ -1,6 +1,6 @@
 import { Card } from "@mui/material";
 import React from "react";
-import { CategoryCardStyled, InfoContainerStyled } from "./categoryCardStyles";
+import { InfoContainerStyled } from "./categoryCardStyles";
 
 const CategoryCard = (item) => {
   return (
