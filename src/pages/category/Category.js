@@ -1,10 +1,8 @@
-import React from 'react'
-import CategoriesItems from '../../components/categoriesItems/CategoriesItems'
+import React from "react";
+import CategoriesItems from "../../components/categoriesItems/CategoriesItems";
 
 const Category = () => {
-  return (
-    <CategoriesItems />
-  )
-}
+  return <CategoriesItems />;
+};
 
-export default Category
+export default Category;

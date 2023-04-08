@@ -5,4 +5,3 @@ export const LinkStyled = styled(Link)`
   text-decoration: none;
   color: #131415;
 `;
-
