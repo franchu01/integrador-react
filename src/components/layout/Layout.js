@@ -5,6 +5,7 @@ import Navbar from "../navbar/Navbar";
 import { PageContainerStyled } from "./LayoutStyles";
 
 import Footer from "../footer/Footer";
+import IniciarSesionBoton from "../inciarSesionBoton/IniciarSesionBoton";
 
 const Layout = ({ children }) => {
   return (
@@ -13,7 +14,7 @@ const Layout = ({ children }) => {
       <PageContainerStyled>{children}</PageContainerStyled>
       
       <Footer />
-      <LogBtns />
+      <IniciarSesionBoton />
     </>
   );
 };

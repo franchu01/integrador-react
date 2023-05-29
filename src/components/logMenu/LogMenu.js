@@ -1,7 +1,7 @@
 import { Button, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { closeLogIn, openLogIn } from "../../actions/toggleLogActions";
+import { closeLogIn } from "../../actions/toggleLogActions";
 import {
   ExitContainer,
   LogBigContainer,
@@ -37,12 +37,12 @@ const LogMenu = () => {
                 />
                 <div>
                   <Button onClick={() => dispatch(closeLogIn())}>
-                    {" "}
-                    Iniciar Sesion{" "}
+                    
+                    Iniciar Sesion
                   </Button>
                   <Button onClick={() => setToggleRegister(true)}>
-                    {" "}
-                    Registrate{" "}
+                    
+                    Registrate
                   </Button>
                 </div>
               </RelativeContainer>
@@ -75,12 +75,12 @@ const LogMenu = () => {
                 />
                 <div>
                   <Button onClick={() => dispatch(closeLogIn())}>
-                    {" "}
-                    Registrar{" "}
+                    
+                    Registrar
                   </Button>
                   <Button onClick={() => setToggleRegister(false)}>
-                    {" "}
-                    Ya tengo cuenta{" "}
+                    
+                    Ya tengo cuenta
                   </Button>
                 </div>
               </RelativeContainer>
