@@ -6,6 +6,7 @@ import { PageContainerStyled } from "./LayoutStyles";
 
 import Footer from "../footer/Footer";
 import IniciarSesionBoton from "../inciarSesionBoton/IniciarSesionBoton";
+import LogMenu from "../logMenu/LogMenu";
 
 const Layout = ({ children }) => {
   return (
@@ -15,6 +16,7 @@ const Layout = ({ children }) => {
       
       <Footer />
       <IniciarSesionBoton />
+      <LogMenu />
     </>
   );
 };

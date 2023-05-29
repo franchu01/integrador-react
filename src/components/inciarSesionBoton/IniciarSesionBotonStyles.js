@@ -7,14 +7,14 @@ export const IniciarSesionBotonContainerStyled = styled(Stack)`
     bottom: 20px;
     left: 20px;
 
-    &{
+    button{
         border: none;
         color: black;
         background-color: transparent;
         cursor: pointer;
         font-weight: bold;
     }
-    &:hover{
+    button:hover{
         color: #ba181b;
     }
 
