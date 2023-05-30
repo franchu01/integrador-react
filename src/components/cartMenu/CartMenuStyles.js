@@ -7,7 +7,7 @@ export const CartContainerStyled = styled.div`
   background-color: white;
   margin-bottom: 40px;
   @media (max-width: 820px) {
-    height: 600px;
+    height: auto;
   }
 `;
 
