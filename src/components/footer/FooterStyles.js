@@ -38,7 +38,6 @@ export const InfoContainerStyled = styled(Box)`
   }
   @media (max-width: 480px) {
     width: 100%;
-    padding: 10px;
   }
 `;
 
