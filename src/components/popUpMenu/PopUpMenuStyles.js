@@ -21,6 +21,10 @@ export const MenuSubContainer = styled(Stack)`
   width: 35%;
   gap: 5px;
 
+  @media (max-width: 820px) {
+    width: 70%;
+  }
+
   h2 {
     color: #ba181b;
   }
