@@ -1,30 +1,29 @@
-import { Button, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { closeLogIn } from "../../actions/toggleLogActions";
 import {
   ExitContainer,
-  LogBigContainer,
-  LogContainer,
-  RelativeContainer,
-} from "./LogMenuStyles";
+  MenuContainer,
+  MenuSubContainer,
+} from "./PopUpMenuStyles";
+import { closeLogIn } from "../../actions/toggleLogActions";
+import { Button, Stack, TextField } from "@mui/material";
 
-const LogMenu = () => {
+const PopUpMenu = () => {
   const state = useSelector((state) => state.toggleLog);
   const [toggleRegister, setToggleRegister] = useState(false);
   const dispatch = useDispatch();
+
   return (
     <>
       {state.open && (
-        <LogBigContainer>
-          <LogContainer>
+        <MenuContainer>
+          <MenuSubContainer>
             {!toggleRegister ? (
-              <RelativeContainer>
-                <h2>Ya tengo una cuenta</h2>
+              <Stack gap="5px">
+                <h2>Iniciar Sesion</h2>
                 <ExitContainer onClick={() => dispatch(closeLogIn())}>
                   X
                 </ExitContainer>
-                <p>Para Iniciar Sesion ingresa tu mail y constraseña</p>
                 <TextField
                   id="outlined-basic"
                   label="Ingresa tu mail aqui"
@@ -37,22 +36,19 @@ const LogMenu = () => {
                 />
                 <div>
                   <Button onClick={() => dispatch(closeLogIn())}>
-                    
-                    Iniciar Sesion
+                    Inciar Sesion
                   </Button>
                   <Button onClick={() => setToggleRegister(true)}>
-                    
-                    Registrate
+                    Registrar
                   </Button>
                 </div>
-              </RelativeContainer>
+              </Stack>
             ) : (
-              <RelativeContainer>
-                <h2>Crear cuenta</h2>
+              <Stack gap="5px">
+                <h2>Crear Cuenta</h2>
                 <ExitContainer onClick={() => dispatch(closeLogIn())}>
                   X
                 </ExitContainer>
-                <p>Para crear una cuenta completa todos los campos</p>
                 <TextField
                   id="outlined-basic"
                   label="Ingresa tu mail aqui"
@@ -75,21 +71,19 @@ const LogMenu = () => {
                 />
                 <div>
                   <Button onClick={() => dispatch(closeLogIn())}>
-                    
                     Registrar
                   </Button>
                   <Button onClick={() => setToggleRegister(false)}>
-                    
                     Ya tengo cuenta
                   </Button>
                 </div>
-              </RelativeContainer>
+              </Stack>
             )}
-          </LogContainer>
-        </LogBigContainer>
+          </MenuSubContainer>
+        </MenuContainer>
       )}
     </>
   );
 };
 
-export default LogMenu;
+export default PopUpMenu;
