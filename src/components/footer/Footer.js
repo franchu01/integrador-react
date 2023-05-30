@@ -12,7 +12,7 @@ import PlaceIcon from "@mui/icons-material/Place";
 import { Typography } from "@mui/material";
 const Footer = () => {
   return (
-    <FooterContainerStyled style={{ flexDirection: "row" }}>
+    <FooterContainerStyled>
       <InfoContainerStyled>
         <p>
           {" "}
@@ -20,7 +20,7 @@ const Footer = () => {
         </p>
       </InfoContainerStyled>
       <InfoContainerStyled>
-        <Typography>
+        <Typography textAlign="center">
           <PlaceIcon /> Todas las imagenes presentadas fueron gracias a
           <a href="https://pixabay.com/es/"> Pixabay</a>,
           <a href="https://www.pexels.com/es-es/"> Pexels</a>,
@@ -32,7 +32,7 @@ const Footer = () => {
         style={{ backgroundColor: "#353535", height: "120px" }}
       >
         <Typography>REDES</Typography>
-        <RedesContainerStyled style={{ flexDirection: "row" }}>
+        <RedesContainerStyled>
           <a href="https://www.linkedin.com/in/francisco-cersosimo-5799731b8/">
             <LinkedInIcon />
           </a>

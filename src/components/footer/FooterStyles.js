@@ -1,20 +1,23 @@
-import { Stack } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import styled from "styled-components";
 
-export const FooterContainerStyled = styled(Stack)`
+export const FooterContainerStyled = styled(Box)`
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 25%;
   background-color: #d9d9d9;
   justify-content: right;
   align-items: center;
   gap: 30px;
-  flex-direction: column;
   @media (max-width: 480px) {
     flex-direction: column;
   }
 `;
 
-export const InfoContainerStyled = styled(Stack)`
+export const InfoContainerStyled = styled(Box)`
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -33,15 +36,20 @@ export const InfoContainerStyled = styled(Stack)`
   @media (max-width: 1000px) {
     width: auto;
   }
+  @media (max-width: 480px) {
+    width: 100%;
+    padding: 10px;
+  }
 `;
 
-export const RedesContainerStyled = styled(Stack)`
+export const RedesContainerStyled = styled(Box)`
+  display: flex;
+  flex-direction: row;
   gap: 20px;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
   padding: 10px;
   @media (max-width: 480px) {
-    flex-direction: column;
+    width: 100%;
   }
 `;
