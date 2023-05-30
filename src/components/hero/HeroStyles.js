@@ -21,7 +21,7 @@ export const CardContainerStyled = styled.div`
   justify-content: center;
   align-items: center;
   gap: 15px;
-  width: 60%;
+  width: 80%;
   margin: 20px;
   flex-wrap: wrap;
 

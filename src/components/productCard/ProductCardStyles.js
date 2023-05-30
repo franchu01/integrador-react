@@ -16,7 +16,6 @@ export const BigContainerStyled = styled.div`
 
 export const CardContainerStyled = styled.div`
   display: flex;
-  width: 40%;
   height: 50%;
   background-color: #edf2f4;
   border-radius: 16px;
