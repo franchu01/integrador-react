@@ -62,7 +62,7 @@ export const ItemInCartCardStyled = styled.div`
   }
 
   @media (max-width: 640px) {
-    width: 95%;
+    width: auto;
   }
 `;
 export const ItemsContainerStyled = styled.div`
