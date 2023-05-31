@@ -10,7 +10,7 @@ export const BigContainerStyled = styled.div`
   background-color: white;
 
   @media (max-width: 820px) {
-    height: 80vh;
+    padding: 20px 0px;
   }
 `;
 

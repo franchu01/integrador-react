@@ -40,6 +40,9 @@ export const CustomBarStyled = styled.div`
   background-color: black;
   height: 1px;
   width: 400px;
+  @media (max-width: 500px) {
+    display: none;
+  }
 `;
 
 export const ItemInCartCardStyled = styled.div`
