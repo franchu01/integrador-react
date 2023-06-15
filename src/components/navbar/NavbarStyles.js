@@ -19,7 +19,7 @@ export const NavbarStyled = styled.div`
 
   @media (max-width: 640px) {
     justify-content: center;
-    height: 260px;
+    height: auto;
   }
 `;
 
@@ -32,6 +32,7 @@ export const TitleStyled = styled.h1`
 
   @media (max-width: 640px) {
     font-size: 50px;
+    height: auto;
   }
 `;
 
@@ -42,10 +43,10 @@ export const ResponsiveProductsMenu = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 20%;
+    min-height: 20%;
+    flex-wrap: wrap;
     background: #353535;
     color: black;
-    margin-bottom: 40px;
     p {
       font-weight: bold;
       padding: 5px;
@@ -102,7 +103,7 @@ export const DivStyled = styled.div`
   width: 700px;
   height: 1px;
   background-color: #ba181b;
-  @media (max-width: 640px) {
+  @media (max-width: 700px) {
     display: none;
   }
 `;

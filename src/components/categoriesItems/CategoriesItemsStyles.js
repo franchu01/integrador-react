@@ -6,8 +6,7 @@ export const CategoryContainerStyled = styled.div`
 
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 500px;
+  min-height: 500px;
   gap: 30px;
   padding: 50px;
 

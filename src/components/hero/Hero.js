@@ -26,9 +26,9 @@ const Hero = () => {
             <CardStyled key={product.id}>
               <LinkStyled to={`/product/${product.id - 1}`}>
                 <img src={require(`../../data${product.img}`)} alt="imagen" />
-                <h4>{product.name}</h4>
-                <p>{product.desc}</p>
-                <p>${product.price}</p>
+                <h4 style={{ paddingLeft: "10px" }}>{product.name}</h4>
+                <p style={{ paddingLeft: "10px" }}>{product.desc}</p>
+                <p style={{ paddingLeft: "10px" }}>${product.price}</p>
               </LinkStyled>
               <Button
                 variant="contained"

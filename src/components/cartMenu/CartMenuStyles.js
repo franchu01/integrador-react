@@ -61,8 +61,9 @@ export const ItemInCartCardStyled = styled.div`
     object-fit: cover;
   }
 
-  @media (max-width: 640px) {
-    width: auto;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    min-width: 165px;
   }
 `;
 export const ItemsContainerStyled = styled.div`

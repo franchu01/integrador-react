@@ -11,6 +11,7 @@ export const BigContainerStyled = styled.div`
 
   @media (max-width: 820px) {
     padding: 20px 0px;
+    height: auto;
   }
 `;
 
@@ -38,6 +39,9 @@ export const CardContainerStyled = styled.div`
     gap: 20px;
     width: auto;
     height: auto;
+    img {
+      width: 240px;
+    }
   }
   @media (max-width: 820px) {
     flex-direction: column;
@@ -59,6 +63,9 @@ export const SeparationDivStyled = styled.div`
   background-color: black;
   width: 1px;
   height: 400px;
+  @media (max-height: 700px) {
+    display: none;
+  }
   @media (max-width: 640px) {
     display: none;
   }
