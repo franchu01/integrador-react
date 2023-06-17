@@ -1,8 +1,9 @@
+import { Button } from "@mui/material";
 import styled from "styled-components";
 
 export const NavbarStyled = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200&display=swap");
-
+  position: relative;
   width: 100%;
   height: 230px;
   display: flex;
@@ -127,5 +128,17 @@ export const HoverMenuStyled = styled.div`
       color: white;
     }
     cursor: pointer;
+  }
+`;
+
+export const LogBtnContainer = styled.div`
+  position: absolute;
+
+  left: 10px;
+  top: 50%;
+
+  @media (max-width: 450px) {
+    position: static;
+    margin-bottom: 5px;
   }
 `;

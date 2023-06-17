@@ -8,12 +8,18 @@ import {
   TitleStyled,
 } from "./NavbarStyles";
 import { useState } from "react";
-
+import PersonIcon from "@mui/icons-material/Person";
 import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { logOutUser } from "../../actions/userActions";
+
 const Navbar = () => {
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
+  const state = useSelector((state) => state.logUser);
+  const dispatch = useDispatch();
 
+  console.log(state);
   return (
     <>
       <NavbarStyled>
@@ -77,7 +83,6 @@ const Navbar = () => {
                 </p>
               </HoverMenuStyled>
             )}
-
             <span
               onClick={() =>
                 alert(
@@ -87,16 +92,27 @@ const Navbar = () => {
             >
               Contacto
             </span>
-            <span
-              onClick={() => {
-                navigate("*");
-              }}
-            >
-              Mis Compras
-            </span>
+            {!state.logged ? (
+              <span
+                onClick={() => {
+                  navigate("register");
+                }}
+              >
+                Crear cuenta
+              </span>
+            ) : (
+              <span
+                onClick={() => {
+                  dispatch(logOutUser());
+                }}
+              >
+                Salir
+              </span>
+            )}
           </MenuToggleStyled>
           <DivStyled></DivStyled>
         </ButtonsContainerStyled>
+
         <ResponsiveProductsMenu>
           <p
             onClick={() => {

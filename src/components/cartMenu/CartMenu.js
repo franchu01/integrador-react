@@ -24,6 +24,7 @@ import {
   removeFromCart,
 } from "../../actions/cartActions";
 import { useState } from "react";
+
 const CartMenu = () => {
   const state = useSelector((state) => state.cart);
   const dispatch = useDispatch();
