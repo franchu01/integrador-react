@@ -3,6 +3,7 @@ import {
   FooterContainerStyled,
   InfoContainerStyled,
   RedesContainerStyled,
+  BigContainerStyled,
 } from "./FooterStyles";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -28,7 +29,7 @@ const Footer = () => {
           <a href="https://unsplash.com/es/images"> UnSplash</a>
         </Typography>
       </InfoContainerStyled>
-      <InfoContainerStyled
+      <BigContainerStyled
         style={{ backgroundColor: "#353535", height: "120px" }}
       >
         <Typography>REDES</Typography>
@@ -46,7 +47,7 @@ const Footer = () => {
             <EmailIcon />
           </a>
         </RedesContainerStyled>
-      </InfoContainerStyled>
+      </BigContainerStyled>
     </FooterContainerStyled>
   );
 };

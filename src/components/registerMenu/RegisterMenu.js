@@ -1,6 +1,10 @@
 import { Button, TextField, Typography } from "@mui/material";
 import React, { useEffect, useState, useRef } from "react";
-import { BigContainer, BigSubContainer } from "./RegisterMenuStyles";
+import {
+  BigContainer,
+  BigSubContainer,
+  CreateAccountStyled,
+} from "./RegisterMenuStyles";
 import { useDispatch } from "react-redux";
 import { logInUser } from "../../actions/userActions";
 import { useNavigate } from "react-router-dom";
@@ -26,7 +30,7 @@ const RegisterMenu = () => {
   return (
     <BigContainer>
       <BigSubContainer>
-        <Typography fontSize="30px">Crear Cuenta</Typography>
+        <CreateAccountStyled fontSize="30px">Crear Cuenta</CreateAccountStyled>
         <TextField
           id="filled-basic"
           label="Email"

@@ -41,6 +41,10 @@ export const InfoContainerStyled = styled(Box)`
   }
 `;
 
+export const BigContainerStyled = styled(InfoContainerStyled)`
+  flex-direction: column;
+`;
+
 export const RedesContainerStyled = styled(Box)`
   display: flex;
   flex-direction: row;
@@ -48,7 +52,4 @@ export const RedesContainerStyled = styled(Box)`
   justify-content: center;
   align-items: center;
   padding: 10px;
-  @media (max-width: 480px) {
-    width: 100%;
-  }
 `;
