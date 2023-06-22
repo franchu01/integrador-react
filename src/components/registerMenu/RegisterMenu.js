@@ -18,50 +18,66 @@ const RegisterMenu = () => {
   useEffect(() => {
     if (email && password && name) {
       areInputsIncomplete.current = false;
-      console.log("hola");
     } else {
       areInputsIncomplete.current = true;
-      console.log("holasdasa");
     }
   });
 
   const navigate = useNavigate();
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Crear objeto con los datos del formulario
+    const formData = {
+      name,
+      email,
+      password,
+    };
+
+    // Guardar los datos del formulario en el almacenamiento local
+    localStorage.setItem("formData", JSON.stringify(formData));
+  };
+  // Falta arreglar que se muestre en nombre, creo que es porque algo del submit funca mal
   return (
     <BigContainer>
-      <BigSubContainer>
-        <CreateAccountStyled fontSize="30px">Crear Cuenta</CreateAccountStyled>
-        <TextField
-          id="filled-basic"
-          label="Email"
-          error
-          variant="filled"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <TextField
-          id="filled-basic"
-          label="Contraseña"
-          error
-          variant="filled"
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <TextField
-          id="filled-basic"
-          label="Nombre"
-          error
-          variant="filled"
-          onChange={(e) => setName(e.target.value)}
-        />
-        <Button
-          disabled={areInputsIncomplete.current}
-          onClick={() => {
-            dispatch(logInUser());
-            navigate("/");
-          }}
-        >
-          Unirse
-        </Button>
-      </BigSubContainer>
+      <form onSubmit={handleSubmit}>
+        <BigSubContainer>
+          <CreateAccountStyled fontSize="30px">
+            Crear Cuenta
+          </CreateAccountStyled>
+          <TextField
+            id="filled-basic"
+            label="Email"
+            error
+            variant="filled"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <TextField
+            id="filled-basic"
+            label="Contraseña"
+            error
+            variant="filled"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <TextField
+            id="filled-basic"
+            label="Nombre"
+            error
+            variant="filled"
+            onChange={(e) => setName(e.target.value)}
+          />
+          <Button
+            disabled={areInputsIncomplete.current}
+            onClick={() => {
+              dispatch(logInUser());
+              navigate("/");
+            }}
+          >
+            Unirse
+          </Button>
+        </BigSubContainer>
+      </form>
     </BigContainer>
   );
 };

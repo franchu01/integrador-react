@@ -12,6 +12,8 @@ import PersonIcon from "@mui/icons-material/Person";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logOutUser } from "../../actions/userActions";
+import { Button, SwipeableDrawer } from "@mui/material";
+import { Person } from "@mui/icons-material";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -19,9 +21,63 @@ const Navbar = () => {
   const state = useSelector((state) => state.logUser);
   const dispatch = useDispatch();
 
+  // Logica del Modal
+
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleDrawerOpen = () => {
+    if (state.logged) {
+      setIsDrawerOpen(true);
+    } else {
+      alert("Debes crear una cuenta antes...");
+    }
+  };
+
+  const handleDrawerClose = () => {
+    setIsDrawerOpen(false);
+  };
+
+  const formData = JSON.parse(localStorage.getItem("formData"));
+
+  // Estilo del modal
+
+  const drawerStyles = {
+    height: "auto",
+    maxHeight: "90vh",
+    overflowY: "auto",
+    marginTop: "20vh",
+    borderRadius: "8px 0 0 8px",
+    width: "80%",
+    maxWidth: "400px",
+    backgroundColor: "#d9d9d9",
+    alignItems: "center",
+    padding: "10px",
+  };
+
+  const buttonStyles = {
+    width: "auto",
+  };
+  console.log(formData);
   console.log(state);
+  // Falta arreglar que se muestre en nombre, creo que es porque algo del submit funca mal
+
   return (
     <>
+      <SwipeableDrawer
+        anchor="right"
+        open={isDrawerOpen}
+        onClose={handleDrawerClose}
+        onOpen={handleDrawerOpen}
+        PaperProps={{ style: drawerStyles }}
+      >
+        <h2>Hola {formData?.name}!</h2>
+        <h3>Nos encanta que te gusten nuestros productos</h3>
+        <p>Aqui puedes ver tu historial de compras</p>
+        <Button color="error" variant="outlined" sx={buttonStyles}>
+          Compras
+        </Button>
+      </SwipeableDrawer>
       <NavbarStyled>
         <TitleStyled>VIRTUOUS</TitleStyled>
 
@@ -83,14 +139,8 @@ const Navbar = () => {
                 </p>
               </HoverMenuStyled>
             )}
-            <span
-              onClick={() =>
-                alert(
-                  "En nuestro pie de pagina encontraras toda la informacion que necesites"
-                )
-              }
-            >
-              Contacto
+            <span onClick={handleDrawerOpen}>
+              <PersonIcon /> Perfil
             </span>
             {!state.logged ? (
               <span
