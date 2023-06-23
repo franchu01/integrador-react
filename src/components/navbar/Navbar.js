@@ -58,8 +58,7 @@ const Navbar = () => {
   const buttonStyles = {
     width: "auto",
   };
-  console.log(formData);
-  console.log(state);
+
   // Falta arreglar que se muestre en nombre, creo que es porque algo del submit funca mal
 
   return (
@@ -71,7 +70,7 @@ const Navbar = () => {
         onOpen={handleDrawerOpen}
         PaperProps={{ style: drawerStyles }}
       >
-        <h2>Hola {formData?.name}!</h2>
+        <h2>Hola {formData?.name.toUpperCase()}!</h2>
         <h3>Nos encanta que te gusten nuestros productos</h3>
         <p>Aqui puedes ver tu historial de compras</p>
         <Button color="error" variant="outlined" sx={buttonStyles}>

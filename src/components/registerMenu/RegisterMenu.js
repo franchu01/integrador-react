@@ -1,4 +1,4 @@
-import { Button, TextField, Typography } from "@mui/material";
+import { Button, FormControl, TextField, Typography } from "@mui/material";
 import React, { useEffect, useState, useRef } from "react";
 import {
   BigContainer,
@@ -21,6 +21,8 @@ const RegisterMenu = () => {
     } else {
       areInputsIncomplete.current = true;
     }
+    var formData = localStorage.getItem("formData");
+    console.log(formData);
   });
 
   const navigate = useNavigate();
@@ -37,6 +39,8 @@ const RegisterMenu = () => {
 
     // Guardar los datos del formulario en el almacenamiento local
     localStorage.setItem("formData", JSON.stringify(formData));
+    dispatch(logInUser());
+    navigate("/");
   };
   // Falta arreglar que se muestre en nombre, creo que es porque algo del submit funca mal
   return (
@@ -67,13 +71,7 @@ const RegisterMenu = () => {
             variant="filled"
             onChange={(e) => setName(e.target.value)}
           />
-          <Button
-            disabled={areInputsIncomplete.current}
-            onClick={() => {
-              dispatch(logInUser());
-              navigate("/");
-            }}
-          >
+          <Button type="submit" disabled={areInputsIncomplete.current}>
             Unirse
           </Button>
         </BigSubContainer>
