@@ -19,7 +19,7 @@ export const cartReducer = (state = initialState, action) => {
       );
 
       let itemInCart = state.cart.find((item) => item.id === newItemInCart.id);
-      console.log(state.cart);
+
       return itemInCart
         ? {
             ...state,

@@ -7,6 +7,7 @@ import Cart from "../pages/cart/Cart";
 import Product from "../pages/product/Product";
 import Category from "../pages/category/Category";
 import Register from "../pages/register/Register";
+import Compras from "../pages/compras/Compras";
 
 const Routes = () => {
   return (
@@ -17,6 +18,7 @@ const Routes = () => {
         <Route path="product/:id" element={<Product />} />
         <Route path="category/:category" element={<Category />} />
         <Route path="register" element={<Register />} />
+        <Route path="compras" element={<Compras />} />
         <Route path="*" element={<Error404 />} />
       </ReactDomRoutes>
     </Layout>

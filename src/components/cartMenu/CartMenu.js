@@ -24,6 +24,7 @@ import {
   removeFromCart,
 } from "../../actions/cartActions";
 import { useState } from "react";
+import { addToCompras } from "../../actions/comprasActions";
 
 const CartMenu = () => {
   const state = useSelector((state) => state.cart);
@@ -87,6 +88,7 @@ const CartMenu = () => {
               <p>Total: $ {totalPrice}</p>
               <FinalizarCompraStyled
                 onClick={() => {
+                  dispatch(addToCompras(state.cart));
                   dispatch(clearCart());
                   alert("¡Muchas gracias por tu compra!");
                 }}

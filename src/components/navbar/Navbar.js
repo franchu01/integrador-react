@@ -73,7 +73,12 @@ const Navbar = () => {
         <h2>Hola {formData?.name.toUpperCase()}!</h2>
         <h3>Nos encanta que te gusten nuestros productos</h3>
         <p>Aqui puedes ver tu historial de compras</p>
-        <Button color="error" variant="outlined" sx={buttonStyles}>
+        <Button
+          color="error"
+          variant="outlined"
+          sx={buttonStyles}
+          onClick={() => navigate("compras")}
+        >
           Compras
         </Button>
       </SwipeableDrawer>
