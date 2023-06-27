@@ -11,6 +11,6 @@ export const TitleContainerStyled = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 55vh;
+  height: 70vh;
   background-color: #0b090a;
 `;
