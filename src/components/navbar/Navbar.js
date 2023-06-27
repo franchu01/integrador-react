@@ -5,6 +5,7 @@ import {
   MenuToggleStyled,
   NavbarStyled,
   ResponsiveProductsMenu,
+  SpanStyled,
   TitleStyled,
 } from "./NavbarStyles";
 import { useState } from "react";
@@ -24,7 +25,6 @@ const Navbar = () => {
   // Logica del Modal
 
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleDrawerOpen = () => {
     if (state.logged) {
@@ -143,9 +143,9 @@ const Navbar = () => {
                 </p>
               </HoverMenuStyled>
             )}
-            <span onClick={handleDrawerOpen}>
+            <SpanStyled onClick={handleDrawerOpen}>
               <PersonIcon /> Perfil
-            </span>
+            </SpanStyled>
             {!state.logged ? (
               <span
                 onClick={() => {

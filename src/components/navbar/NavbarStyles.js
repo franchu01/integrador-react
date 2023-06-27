@@ -142,3 +142,9 @@ export const LogBtnContainer = styled.div`
     margin-bottom: 5px;
   }
 `;
+
+export const SpanStyled = styled.span`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;

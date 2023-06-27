@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  BoldSpan,
   BoxStyled,
   ComprasContainer,
   ItemsContainerStyled,
@@ -41,7 +42,9 @@ const ComprasSite = () => {
                         <Typography color="error" fontWeight="bold">
                           {item.name}
                         </Typography>
-                        <p>x {item.quantity}</p>
+                        <p>
+                          x <BoldSpan>{item.quantity}</BoldSpan>
+                        </p>
                       </NameQuanityStyled>
                     </ItemsNameStyled>
                   </>

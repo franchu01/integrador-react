@@ -25,6 +25,10 @@ export const BoxStyled = styled(Box)`
   margin-bottom: 20px;
 `;
 
+export const BoldSpan = styled.span`
+  font-weight: bold;
+`;
+
 export const ItemsContainerStyled = styled(Box)`
   border: 1px solid black;
   border-radius: 6px;
